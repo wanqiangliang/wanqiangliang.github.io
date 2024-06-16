@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GL.iNet</title>
+</head>
+<body>
+
+<h1>说明</h1>
+<p>点击图标开始对话</p>
+	
+<script src="https://snippets.freshchat.com/js/fc-pre-chat-form-v2.min.js"></script>
+<script>
+  var preChatTemplate = {
+    //Form header color and Submit button color.
+    mainbgColor: '#008b8a',
+    //Form Header Text and Submit button text color.
+    maintxColor: '#fff',
+    //Chat Form Title
+    heading: 'GL.iNet',
+    //Chat form Welcome Message
+    textBanner: 'We can\'t wait to talk to you. But first, please take a couple of moments to tell us a bit about yourself.',
+    //Submit Button Label.
+    SubmitLabel: 'Start Chat',
+    //Fields List - Maximum is 5
+    //All the values are mandatory and the script will not work if not available.
+    fields : {
+      Field1 : {
+        //Type for Name - Do not Change
+        type: "name",
+        //Label for Field Name, can be in any language
+        label: "Name",
+        //Default - Field ID for Name - Do Not Change
+        fieldId: "name",
+        //Required "yes" or "no"
+        required: "yes",
+        //Error text to be displayed
+        error: "Please Enter a valid name"
+      },
+      field2 : {
+        //Type for Email - Do Not Change
+        type: "email",
+        //Label for Field Email, can be in any language
+        label: "Email",
+        //Default - Field ID for Email - Do Not Change
+        fieldId: "email",
+        //Required "yes" or "no"
+        required: "yes",
+        //Error text to be displayed
+        error: "Please Enter a valid Email"
+      }
+    }
+  };
+  window.fcSettings = {
+    token: "f6a275c7-e696-451a-b2a4-a00af9c79c7b",
+    host: "https://glinetservice.freshchat.com",
+    widgetUuid: "db8e47d5-c3f4-4e55-ac20-226deaa0602f",
+    config: {
+      cssNames: {
+        //The below element is mandatory. Please add any custom class or leave the default.
+        widget: 'custom_fc_frame',
+        //The below element is mandatory. Please add any custom class or leave the default.
+        expanded: 'custom_fc_expanded'
+      }
+    },
+    onInit: function() {
+      console.log('widget init');
+      fcPreChatform.fcWidgetInit(preChatTemplate);
+    }
+  };
+</script>
+<script src="https://glinetservice.freshchat.com/js/widget.js" async></script>
+	
+</body>
+</html>
