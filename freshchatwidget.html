@@ -35,9 +35,18 @@
 <li>大家帮忙检查：</li>
 	<ul>
 	<li>AI回复内容是否可以采纳，准确率？</li>
-	<li>还有哪些建议补充的知识库？比如常见问题的回复等</li>
+	<li>还有哪些建议补充的知识库？比如常见问题的建议回复等</li>
+	<li>还有哪些建议补充的应答规则？比如遇到订单货退货问题建议联系人工等</li>
 	<li>熟悉下交互路径，看看是否合理</li>
 	<li>按钮信息、提示信息等是否需要改进</li>
+	</ul>	
+<li>其他：</li>
+	<ul>
+	<li>目前设置temprature参数为0，取值范围0-1，越低回复越保守；并要求只能根据已有知识库回复；历史5次对话信息会作为应答上下文信息；</li>
+	<li>AI目前不能学习知识库中的图片信息，交互中也无法提供和识别图片信息</li>
+	<li>AI只能作为辅助，还不能替代人工，用户也知道这个情况，AI交互过程中也方便转人工</li>
+	<li>如回复不能满足要求，先考虑是否需要增加知识库，或定义应答规则</li>
+	<li>如果考虑上线的话，可以官网先上线，监控一下数据，多少问题能由AI解决</li>
 	</ul>	
 </ul>	
 </p>
@@ -47,7 +56,7 @@
 <p><a href="https://wanqiangliang.github.io/aibot.html">点击进入 「技术支持AI BOT」，可以脱离FreshChat Widget单独验证AI能力</a> </p>
 
 <h1>Shopify Store专用AI BOT</h1>
-<p><a href="https://wanqiangliang.github.io/aibot-test.html">这是 「Shopify Store专用AI BOT」，可以做一下验证</a></p>
+<p><a href="https://wanqiangliang.github.io/aibot-test.html">这是 「Shopify Store专用AI BOT」，可以做一下验证，如果上线还要考虑不同站点学习内容有不同</a></p>
 <ul>
 <li>已学习的知识库包含以下内容</li>
 	<ul>
